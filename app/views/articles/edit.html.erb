@@ -1,0 +1,19 @@
+
+<!-- <h1>My edit</h1> -->
+
+<%= form_for @article do |f| %>
+<!-- < form_tag articles_path do %> -->
+
+    <%= f.label 'Article Title' %><br>
+    <!-- <label>Article title:</label><br> -->
+    <%= f.text_field :title %><br>
+    <!-- < text_field_tag :title %><br> -->
+
+    <%= f.label 'Article Description' %><br>
+    <!-- <label>Article Description</label><br> -->
+    <%= f.text_area :description %><br>
+    <!-- < text_area_tag :description %><br> -->
+
+    <%= f.submit "Submit Article" %>
+    <!-- < submit_tag "Submit Article" %> -->
+<% end %>
